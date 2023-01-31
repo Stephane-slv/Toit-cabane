@@ -1,0 +1,54 @@
+<!--
+w3-animate-opacity : crée une animation (fondu) à l'affichage de la page
+w3-card : crée un cadre
+w3-blue : on lui donne une couleur
+w3-padding : ajoute une marge autour du texte à l'interieur du cadre; small: 4px gauche et droite 8px haut et bas
+w3-margin : ajoute une marge de 16px autour d'un élément
+w3-center : centre un élémment sur l'écran
+-->
+
+
+<!DOCTYPE html>
+<html lang="fr">
+    
+<head>
+    <title>Serveur ESP32AP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="w3.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body class="w3-animate-opacity">
+
+    <div class="w3-card w3-padding-small w3-blue w3-margin w3-center">  <!--Création cadre bleu haut de page -->
+        <h1>CABANE</h1>  <!--Texte taille h1-->
+    </div>
+
+    <div class="w3-margin w3-center w3-card w3-padding">   <!--Création du cadre jaune-->
+        <h5 class="w3-padding">Appuyer sur le boutton pour déclancher un mouvement</h5> <!--Texte taille h3-->
+        <button onclick="onButton()" class="w3-button w3-green w3-xlarge w3-ripple w3-wide" style="width:40%;">On/Off</button>
+<!--
+        <button onclick="offButton()" class="w3-button w3-red w3-xlarge w3-ripple w3-wide" style="width:40%;">OFF</button>
+-->
+        <br><br>    <!--Saut de ligne x2-->
+    </div>
+
+    <div class="w3-margin w3-center w3-card w3-padding">    <!--Création du cadre retour info toit-->
+        <h5 class="w3-padding">Position pan de toit</h5>
+        <p class="w3-large"><span id="captToitA_Haut">0</span></p>
+    </div>
+
+    <div class="w3-margin w3-center w3-card w3-padding">    <!--Création du cadre météo-->
+        <h5 class="w3-padding">Température</h5>
+        <p class="w3-large"><span id="temperature">0</span></p>
+    </div>
+
+    <!--
+    <div class="w3-padding w3-center">
+        <i><a href="https://TommyDesrochers.com" style="text-decoration: none;">Tommy Desrochers 2020</a></i>
+    </div>
+-->
+</body>
+
+</html>
+
